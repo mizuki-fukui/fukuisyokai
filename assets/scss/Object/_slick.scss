@@ -1,0 +1,85 @@
+.dots {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: flex;
+  background-color: #fff;
+  color: $theme;
+}
+.prev,
+.next {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  color: $theme;
+  position: absolute;
+}
+.prev {
+  right: 30px;
+  bottom: 0;
+  position: absolute;
+  z-index: 4;
+  &::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    display: block;
+    background-color: $theme;
+    position: relative;
+    top: 10px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    transform: rotate(-45deg);
+  }
+  &::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    display: block;
+    background-color: $theme;
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 14px;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(45deg);
+  }
+}
+.next {
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  z-index: 4;
+  &::before {
+    content: '';
+    width: 10px;
+    height: 2px;
+    display: block;
+    background-color: $theme;
+    position: relative;
+    top: 10px;
+    bottom: 0;
+    left: 1px;
+    right: 0;
+    margin: auto;
+    transform: rotate(45deg);
+  }
+  &::after {
+    content: '';
+    width: 10px;
+    height: 2px;
+    display: block;
+    background-color: $theme;
+    position: relative;
+    right: 0;
+    left: 1px;
+    top: 14px;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(-45deg);
+  }
+}
+

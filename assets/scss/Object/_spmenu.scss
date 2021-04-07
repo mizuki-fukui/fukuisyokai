@@ -1,0 +1,65 @@
+.spmenu {
+  display: none
+}
+@media screen and (max-width: 768px) {
+  .spmenu {
+    width: 100vw;
+    height: 100vh;
+    background-color: $theme;
+    z-index: 4;
+    transition: .7s;
+    opacity: 0;
+    display: block;
+    position: fixed;
+    top: 100vw;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: opacity .3s;
+    &.active {
+      top: 0;
+      z-index: 4;
+      opacity: 1;
+      display: block;
+    }
+    &_box {
+      width: 80vw;
+      height: 80vh;
+      margin: 20vw auto;
+      background-color: #fff;
+      text-align: center;
+      position: relative;
+      border-radius: 30px;
+      &::before {
+        content: '';
+        width: 90%;
+        height: 93%;
+        display: block;
+        border: 2px dotted $theme;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        border-radius: 30px;
+      }
+      &_text {
+        padding-top: 40%;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        margin: auto;
+        &_link {
+          margin-bottom: 20px;
+          display: block;
+          font-size: 30px;
+          color: $theme;
+        }
+      }
+    }
+  }
+}

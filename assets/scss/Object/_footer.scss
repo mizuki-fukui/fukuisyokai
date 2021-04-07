@@ -1,0 +1,86 @@
+.footer {
+  background-color: $theme;
+  position: relative;
+  &_box {
+    padding-top: calc((80 / 1366) * 100vw);
+    padding-bottom: calc((100 / 1366) * 100vw);
+    padding-left: calc((100 / 1366) * 100vw);
+    padding-right: calc((100 / 1366) * 100vw);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &_item {
+      flex: 0 0 50%;
+      width: 50%;
+      text-align: center;
+      &_logo {
+        width: calc((200 / 1366) * 100vw);
+        margin: 0 auto;
+        &_img {
+          width: 100%;
+        }
+      }
+      &_icon {
+        margin-top: 30px;
+        &_mail {
+          color: #fff;
+          font-size: 30px;
+        }
+        &_tel {
+          color: #fff;
+          font-size: 30px;
+        }
+      }
+      &_menubox {
+        margin-top: 20px;
+        &_link {
+          display: block;
+          color: #fff;
+          margin-bottom: 10px;
+          font-size: calc((15 / 1366) * 100vw);
+        }
+      }
+    }
+  }
+  &_arrow {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer {
+    &_box {
+      padding-top: 40px;
+      padding-bottom: 40px;
+      padding-left: 25px;
+      padding-right: 25px;
+      display: block;
+      &_item {
+        width: 100%;
+        &_logo {
+          width: 200px;
+        }
+        &_icon {
+          margin-top: 20px;
+          &_mail {
+            font-size: 25px;
+            margin-right: 25px;
+          }
+          &_tel {
+            font-size: 25px;
+          }
+        }
+        &_menubox {
+          margin-top: 10px;
+          &_link {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+    &_arrow {
+      display: none;
+    }
+  }
+}

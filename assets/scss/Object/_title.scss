@@ -1,0 +1,120 @@
+
+.title {
+  margin-bottom: 30px;
+  font-size: calc((70 / 1366) * 100vw);
+  font-weight: 600;
+}
+.title2 {
+  font-size: calc((70 / 1366) * 100vw);
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  &--theme {
+    &::before {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: $theme;
+      position: absolute;
+      left: calc((100 / 1366) * 100vw * -1);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+    &::after {
+      content: '';
+      width: calc((50 / 1366) * 100vw);
+      height: 3px;
+      background-color: $theme;
+      position: absolute;
+      right: calc((100 / 1366) * 100vw * -1);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+  &--wt {
+    &:before {
+      content: '';
+      width: 50px;
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      right: calc((100 / 1366) * 100vw * -1);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+    &::after {
+      content: '';
+      width: calc((50 / 1366) * 100vw);
+      height: 3px;
+      background-color: #fff;
+      position: absolute;
+      left: calc((100 / 1366) * 100vw * -1);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+    }
+  }
+}
+.sbttl {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: calc((20 / 1366) * 100vw);
+  font-family: $serif;
+}
+.sbttl2 {
+  vertical-align: middle;
+  font-size: calc((20 / 1366) * 100vw);
+  font-family: $serif;
+}
+.-gr {
+  color: $theme;
+}
+.-br {
+  color: $bro;
+}
+.-wt {
+  color: #fff;
+}
+.-wtgr {
+  color: #eee;
+}
+@media screen and (max-width: 768px) {
+  .title {
+    margin-bottom: 30px;
+    font-size: 60px;
+    text-align: center;
+  }
+  .title2 {
+    font-size: 60px;
+    text-align: center;
+    &--theme {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+    &--wt {
+      &::before {
+        display: none;
+      }
+      &::after {
+        display: none;
+      }
+    }
+  }
+  .sbttl {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+  .sbttl2 {
+    font-size: 20px;
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,108 @@
+.header {
+  padding-left: calc((100 / 1366) * 100vw);
+  padding-right: calc((100 / 1366) * 100vw);
+  width: 100%;
+  height: 100px;
+  background-color: rgba(255, 255, 255, 0.664);
+  position: fixed;
+  z-index: 5;
+  &_box {
+    margin: auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    &_logo {
+      padding-top: 10px;
+      flex: 0 0 30%;
+      width: 30%;
+      &_img {
+        width: 200px;
+        display: inline-block;
+      }
+    }
+    &_menu {
+      flex: 0 0 70%;
+      width: 70%;
+      text-align: right;
+      &_link {
+        margin-left: 26px;
+        color: #000;
+        font-weight: bold;
+      }
+    }
+    &_spicon {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .header {
+    padding-left: 25px;
+    padding-right: 25px;
+    width: 100%;
+    height: 65px;
+    overflow: hidden;
+    background-color: transparent;
+    &_box {
+      max-width: none;
+      justify-content: space-between;
+      align-items: flex-start;
+      &_logo {
+        padding-top: 5px;
+        &_img {
+          width: 130px;
+        }
+      }
+      &_menu {
+        display: none;
+      }
+      &_spicon {
+        margin-top: 5px;
+        display: block;
+        flex: 0 0 50%;
+        width: 50%;
+        text-align: right;
+        &_link {
+          width: 30px;
+          height: 2px;
+          background-color: #fff;
+          display: inline-block;
+          position: relative;
+          transition: .3s;
+          &::before,
+          &::after {
+            content: '';
+            width: 30px;
+            height: 2px;
+            background-color: #fff;
+            display: block;
+            position: absolute;
+            transition: .3s;
+          }
+          &::before {
+            content: '';
+            top: 10px;
+          }
+          &::after {
+            content: '';
+            top: 20px;
+          }
+          &.active {
+            background-color: transparent;
+            transition: .3s;
+            &::before {
+              transform: rotate(45deg);
+              transition: .3s;
+            }
+            &::after {
+              transform: rotate(-45deg);
+              transition: .3s;
+              top: 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+$seconds : .5s;
+
+.js-fade {
+  opacity: 0;
+  transform: translate(0, 50px);
+  transition: opacity 1.5s ease, transform .8s ease;
+  &--ttl {
+    transition: opacity 1.5s ease .2s, transform .8s ease;
+  }
+  &--2 {
+    transition: opacity 1.5s ease .5s, transform .8s ease;
+    @media screen and (max-width: 768px) {
+      transition: opacity 1.5s ease .3s, transform .8s ease;
+    }
+  }
+  &--3 {
+    transition: opacity 1.5s ease 1s , transform .8s ease;
+    @media screen and (max-width: 768px) {
+      transition: opacity 1.5s ease .5s, transform .8s ease;
+    }
+  }
+}
+.js-fade.active {
+  opacity: 1;
+  transform: translate(0, 0);
+}

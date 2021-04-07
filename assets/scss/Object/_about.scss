@@ -1,0 +1,136 @@
+.about {
+  padding-top: calc((80 / 1366) * 100vw);
+  padding-bottom: calc((40 / 1366) * 100vw);
+  padding-left: calc((100 / 1366) * 100vw);
+  padding-right: calc((100 / 1366) * 100vw);
+  margin: 0 auto;
+  &_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &_image {
+      padding-left: calc((20 / 1366) * 100vw);
+      flex: 0 0 50%;
+      width: 50%;
+      &_img {
+        width: 100%;
+      }
+    }
+    &_item {
+      margin-top: calc((20 / 1366) * 100vw);
+      margin-left: calc((50 / 1366) * 100vw);
+      flex: 0 0 50%;
+      width: 50%;
+      color: $theme;
+      &_ttl {
+        margin-bottom: calc((30 / 1366) * 100vw);
+        font-size: calc((24 / 1366) * 100vw);
+        font-weight: 600;
+      }
+      &_adbox {
+        margin-bottom: calc((30 / 1366) * 100vw);
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        &_left {
+          flex: 0 0 30%;
+          width: 30%;
+          &_time {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+          &_day {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+          &_tel {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+        }
+        &_right {
+          flex: 0 0 70%;
+          width: 70%;
+          &_time {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+          &_day {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+          &_time {
+            font-size: calc((18 / 1366) * 100vw);
+          }
+        }
+      }
+      &_message {
+        font-size: calc((20 / 1366) * 100vw);
+      }
+    }
+  }
+}
+table {
+  width: 100%;
+}
+td {
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .about {
+    padding-top: 40px;
+    padding-left: 25px;
+    padding-right: 25px;
+    &_box {
+      display: block;
+      &_image {
+        margin: 0 auto;
+        padding-left: 20px;
+        width: 80%;
+      }
+      &_item {
+        margin-top: 20px;
+        margin-left: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        &_ttl {
+          margin-bottom: 20px;
+          font-size: 24px;
+        }
+        &_adbox {
+          margin-bottom: 20px;
+          &_left {
+            width: 50%;
+            &_time {
+              font-size: 18px;
+            }
+            &_day {
+              font-size: 18px;
+            }
+            &_tel {
+              font-size: 18px;
+            }
+          }
+          &_right {
+            width: 50%;
+            &_time {
+              font-size: 18px;
+            }
+            &_day {
+              font-size: 18px;
+            }
+            &_time {
+              font-size: 18px;
+            }
+          }
+        }
+        &_message {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  table {
+    width: 60%;
+    margin: 0 auto;
+  }
+  td {
+    margin-left: 10px;
+  }
+}

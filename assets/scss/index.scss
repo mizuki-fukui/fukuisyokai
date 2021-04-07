@@ -1,0 +1,33 @@
+@charset 'utf-8';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+
+$theme : #d5d0d0;
+$bro : #7c7a7a;
+$serif : 'Noto Serif JP', serif;
+
+@import 'Foundation/settings';
+@import 'Foundation/webfont';
+@import 'Object/header';
+@import 'Object/spmenu';
+@import 'Object/kv';
+@import 'Object/trouble';
+@import 'Object/container';
+@import 'Object/sollution';
+@import 'Object/services';
+@import 'Object/works';
+@import 'Object/about';
+@import 'Object/footer';
+@import 'Object/copy';
+@import 'Object/title';
+@import 'Object/button';
+@import 'Object/slick';
+@import 'Object/scrollFunc';
+
+@import 'Layout/contents';

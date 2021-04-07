@@ -1,0 +1,28 @@
+.works {
+  padding-left: calc((100 / 1366) * 100vw);
+  padding-right: calc((100 / 1366) * 100vw);
+  padding-top: calc((80 / 1366) * 100vw);
+  padding-bottom: calc((50 / 1366) * 100vw);
+  margin: 0 auto;
+  text-align: center;
+  &_slider {
+    margin-top: calc((50 / 1366) * 100vw);
+    width: 70%;
+    margin: 20px auto;
+    &_image {
+      &_img {
+        width: 100%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .works {
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 40px;
+    &_slider {
+      margin-top: 50px;
+    }
+  }
+}
