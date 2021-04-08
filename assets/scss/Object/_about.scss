@@ -4,6 +4,7 @@
   padding-left: calc((100 / 1366) * 100vw);
   padding-right: calc((100 / 1366) * 100vw);
   margin: 0 auto;
+  max-width: 1366px;
   &_box {
     display: flex;
     justify-content: flex-start;

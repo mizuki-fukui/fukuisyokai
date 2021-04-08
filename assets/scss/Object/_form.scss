@@ -1,0 +1,63 @@
+.error {
+  font-size: 12px;
+  color: red;
+}
+.label {
+  margin-bottom: 10px;
+  display: inline-block;
+  width: 200px;
+  font-size: 20px;
+  color: #000;
+  min-width: 200px;
+  vertical-align: top;
+}
+.formbox {
+  width: 50%;
+  height: 40px;
+  border-radius: 10px;
+  border: 1px solid $theme;
+}
+.formtxt {
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  border: 1px solid $theme;
+}
+.formButton {
+  margin: 0 10px;
+  width: 200px;
+  height: 70px;
+  border: 1px solid $theme;
+  border-radius: 30px;
+  display: inline-block;
+  &_txt {
+    display: inline-block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: $theme;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+.confirm {
+  font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+  .formbox {
+    width: 90%;
+    height: 40px;
+  }
+  .formtxt {
+    width: 90%;
+  }
+  .formButton {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    &_txt {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}

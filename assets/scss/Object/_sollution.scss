@@ -4,6 +4,8 @@
   padding-top: calc((80 / 1366) * 100vw);
   padding-bottom: calc((40 / 1366) * 100vw);
   background-color: $theme;
+  max-width: 1366px;
+  margin: 0 auto;
   &_box {
     margin-top: calc((30 / 1366) * 100vw);
     display: flex;

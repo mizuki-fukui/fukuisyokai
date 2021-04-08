@@ -1,0 +1,57 @@
+.contacts {
+  margin: 20px auto 80px;
+  padding-left: calc((200 / 1366) * 100vw);
+  padding-right: calc((200 / 1366) * 100vw);
+  max-width: 1366px;
+  &_box {
+    margin-bottom: 50px;
+    padding-bottom: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 40px;
+    background-color: $theme;
+    border-radius: 30px;
+    &_item {
+      text-align: center;
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 30px;
+      &_txt {
+        margin-bottom: 30px;
+      }
+      &_form {
+        margin-bottom: 20px;
+      }
+      &_button {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .contacts {
+    margin-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-bottom: 40px;
+    &_box {
+      margin-bottom: 25px;
+      padding-bottom: 20px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-right: 20px;
+      &_item {
+        padding: 20px;
+      }
+      &_txt {
+        margin-bottom: 10px;
+      }
+      &_form {
+        margin-bottom: 10px;
+      }
+      &_button {
+        margin-top: 10px;
+      }
+    }
+  }
+}

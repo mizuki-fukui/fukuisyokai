@@ -1,13 +1,15 @@
 $(function () {
+
+  //spmenu
   var spIcon = $('.js-spicon');
   var spMenu = $('.js-spmenu');
   var spbar = $('.js-spbar');
 
-  //spmenu
   spIcon.on('click', function () {
     spMenu.toggleClass('active');
     spbar.toggleClass('active');
   })
+
 
   //scroll Func
   var scrollBtn = $('.js-scroll');
@@ -36,15 +38,4 @@ $(function () {
     });
   });
 
-  //slick
-  $('.slider').slick({
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    prevArrow:'<div class="prev"></div>',
-    nextArrow:'<div class="next"></div>',
-    autoplay: true,
-    autoplaySpeed: 3000,
-  });
 });

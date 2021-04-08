@@ -9,6 +9,8 @@
     display: flex;
     justify-content: flex-start;
     align-items: flex-start;
+    max-width: 1366px;
+    margin: 0 auto;
     &_item {
       flex: 0 0 50%;
       width: 50%;
