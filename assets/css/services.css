@@ -30,7 +30,6 @@
   padding-right: calc((100 / 1366) * 100vw);
   width: 100%;
   height: 100px;
-  background-color: rgba(255, 255, 255, 0.664);
   position: fixed;
   z-index: 5;
 }
@@ -58,6 +57,8 @@
 }
 
 .header_box_logo_img {
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
   width: 200px;
   display: inline-block;
 }
@@ -71,9 +72,13 @@
 }
 
 .header_box_menu_link {
-  margin-left: 26px;
+  padding: 10px 10px;
+  margin-left: 6px;
   color: #000;
   font-weight: bold;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.664);
+  border-radius: 10px;
 }
 
 .header_box_spicon {
@@ -356,7 +361,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .titkearea {
+  .titlearea {
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -677,5 +682,102 @@
 
 .kv {
   height: auto;
+}
+
+.type {
+  margin: 30px auto;
+  text-align: center;
+}
+
+.type_txt {
+  font-size: 24px;
+}
+
+.main {
+  text-align: center;
+}
+
+.main_box {
+  margin: 0 auto 30px;
+  width: 80%;
+  border: 1px solid #d5d0d0;
+  border-radius: 30px;
+}
+
+.main_box_title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main_box_title_ttl {
+  font-size: 20px;
+}
+
+.main_box_contents {
+  position: relative;
+}
+
+.main_box_contents_button {
+  width: 40px;
+  height: 40px;
+  border: 1px solid #d5d0d0;
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+  top: -55px;
+  left: 30px;
+  -webkit-box-shadow: 2px 2px #888;
+          box-shadow: 2px 2px #888;
+}
+
+.main_box_contents_button.open {
+  background-color: #d5d0d0;
+}
+
+.main_box_contents_button.open::after {
+  content: '';
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.main_box_contents_accordion {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  padding-bottom: 20px;
+  text-align: left;
+}
+
+.ttl {
+  width: 50%;
+}
+
+.value {
+  width: 50%;
+}
+
+.active {
+  display: none;
+}
+
+.wrapper {
+  margin-bottom: 80px;
 }
 /*# sourceMappingURL=services.css.map */

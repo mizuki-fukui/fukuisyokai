@@ -76,7 +76,7 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
 
   <div class="kv">
     <div class="kv_image">
-      <img src="/assets/images/img/contactkv.png" alt="" class="kv_image_img">
+      <img src="/assets/images/img/contact_kv.jpg" alt="" class="kv_image_img">
     </div>
   </div>
 
