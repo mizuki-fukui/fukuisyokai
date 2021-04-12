@@ -1,7 +1,6 @@
 .kv {
   width: 100%;
   height: calc((640 / 1366) * 100vw);
-  max-width: 1366px;
   margin: 0 auto;
   &_image {
     margin-left: auto;

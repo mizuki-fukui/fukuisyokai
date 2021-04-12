@@ -1,20 +1,21 @@
 $(function () {
 
+  //header 
+    $("#header").load("header.html");
+    $("#footer").load("footer.html");
+
   //spmenu
   var spIcon = $('.js-spicon');
   var spMenu = $('.js-spmenu');
   var spbar = $('.js-spbar');
-
   spIcon.on('click', function () {
     spMenu.toggleClass('active');
     spbar.toggleClass('active');
   })
 
-
   //scroll Func
   var scrollBtn = $('.js-scroll');
   var body = $('html, body');
-
   scrollBtn.click(function () {
     body.animate({
         scrollTop: 0
@@ -24,7 +25,6 @@ $(function () {
 
   //fadein up
   const fadeFunc = $('.js-fade');
-  
   $(window).scroll(function() {
     fadeFunc.each(function(i, e){
       var targetElement = $(e).offset().top;

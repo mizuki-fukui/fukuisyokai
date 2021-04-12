@@ -4,6 +4,10 @@
 .is-hideSP {
   display: block;
 }
+.wrapper {
+  margin-bottom: 80px;
+}
+
 @media screen and (max-width: 768px) {
   .is-hidePC {
     display: block;

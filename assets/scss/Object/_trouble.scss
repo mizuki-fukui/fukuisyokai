@@ -60,3 +60,21 @@
     }
   }
 }
+@media screen and (min-width: 1301px) {
+  .trouble {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &_box {
+      &_item {
+        &_ttl {
+          height: 80px;
+          left: 15px;
+          &_txt {
+            padding-top: 25px;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+} 

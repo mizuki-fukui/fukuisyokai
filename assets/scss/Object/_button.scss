@@ -62,3 +62,14 @@
     }
   }
 } 
+@media screen and (min-width: 1301px) {
+  .button {
+    &_txt {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-right: 70px;
+      padding-left: 70px;
+      font-size: 18px;
+    }
+  }
+}

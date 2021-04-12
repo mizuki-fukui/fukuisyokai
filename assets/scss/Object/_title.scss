@@ -118,3 +118,36 @@
     text-align: center;
   }
 }
+
+@media screen and (min-width: 1301px) {
+  .title {
+    font-size: 70px;
+  }
+  .title2 {
+    font-size: 70px;
+    &--theme {
+      &::before {
+        left: -80px;
+      }
+      &::after {
+        width: 50px;
+        right: -80px;
+      }
+    }
+    &--wt {
+      &::before {
+        right: -80px;
+      }
+      &::after {
+        width: 50px;
+        left: -80px;
+      }
+    }
+  }
+  .sbttl {
+    font-size: 20px;
+  }
+  .sbttl2 {
+    font-size: 20px;
+  }
+}

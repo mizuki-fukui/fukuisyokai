@@ -18,6 +18,9 @@ $serif : 'Noto Serif JP', serif;
 @import 'Object/spmenu';
 @import 'Object/kv';
 @import 'Object/titlearea';
+@import 'Object/type';
+@import 'Object/table';
+@import 'Object/main';
 @import 'Object/footer';
 @import 'Object/copy';
 @import 'Object/title';
@@ -25,79 +28,4 @@ $serif : 'Noto Serif JP', serif;
 
 .kv {
   height: auto;
-}
-
-.type {
-  margin: 30px auto;
-  text-align: center;
-  &_txt {
-    font-size: 24px;
-  }
-}
-.main {
-  text-align: center;
-  &_box {
-    margin: 0 auto 30px;
-    width: 80%;
-    border: 1px solid $theme;
-    border-radius: 30px;
-    &_title {
-      padding-top: 20px;
-      padding-bottom: 20px;
-      position: relative;
-      user-select: none;
-      &_ttl {
-        font-size: 20px;
-      }
-    }
-    &_contents {
-      position: relative;
-      &_button {
-        width: 40px;
-        height: 40px;
-        border: 1px solid $theme;
-        border-radius: 50%;
-        display: inline-block;
-        position: absolute;
-        top: -55px;
-        left: 30px;
-        box-shadow: 2px 2px #888;
-        &.open {
-          background-color: $theme;
-        }
-        &.open::after {
-          content: '';
-          box-shadow: none;
-        }
-      }
-      &_accordion {
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 20px;
-        text-align: center;
-        margin: 0 auto;
-        display:block;
-        transition: 3s;
-      }
-    }
-  }
-}
-table {
-  width: 100%;
-}
-td {
-  padding-bottom: 20px;
-  text-align: left;
-}
-.ttl {
-  width: 50%;
-}
-.value {
-  width: 50%;
-}
-.active {
-  display: none;
-}
-.wrapper {
-  margin-bottom: 80px;
 }

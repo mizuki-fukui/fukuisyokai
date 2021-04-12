@@ -6,10 +6,47 @@
   margin: 0 auto;
   max-width: 1366px;
   text-align: center;
-  &_slider {
-    margin-top: calc((50 / 1366) * 100vw);
-    width: 70%;
-    margin: 20px auto;
+  &_contents {
+    margin-top: 50px;
+    display: flex;
+    align-self: flex-start;
+    justify-content: space-between;
+    &_box {
+      display: flex;
+      justify-content: flex-start;
+      align-items: stretch;
+      &:nth-child(2) {
+        margin: 0 10px;
+      }
+      &_image {
+        &_img {
+          width: 100%;
+          vertical-align: top;
+        }
+      }
+      &_label {
+        padding-top: 20px;
+        background-color: #eee;
+        &_num {
+          padding-left: 5px;
+          padding-right: 5px;
+          margin: 0 auto;
+          font-size: calc((24 / 1300) * 100vw);
+          background-color: #fff;
+          color: $theme;
+        }
+        &_ttl {
+          padding-left: 5px;
+          padding-right: 5px;
+          padding-top: 20px;
+          margin: 0 auto;
+          font-size: calc((20 / 1300) * 100vw);
+          color: #888;
+          writing-mode: vertical-lr;
+          font-family: $serif;
+        }
+      }
+    }
     &_image {
       &_img {
         width: 100%;
@@ -22,6 +59,15 @@
     padding-left: 25px;
     padding-right: 25px;
     padding-top: 40px;
+    &_slider {
+      margin-top: 50px;
+    }
+  }
+}
+@media screen and (min-width: 1301px) {
+  .works {
+    padding-top: 80px;
+    padding-bottom: 80px;
     &_slider {
       margin-top: 50px;
     }

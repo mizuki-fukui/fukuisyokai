@@ -63,3 +63,20 @@
     }
   }
 }
+@media screen and (min-width: 1301px) {
+  .services {
+    padding-top: 80px;
+    &_box {
+      &_item {
+        flex: 0 0 250px;
+        width: 250px;
+        &_title {
+          height: 50px;
+          &_ttl {
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}

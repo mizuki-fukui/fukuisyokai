@@ -1,5 +1,18 @@
 $(function () {
-    //slick
+
+  //kv slick
+  $('.slick').slick({
+    arrows: false,
+    dots: true,
+    infinite: true,
+    speed: 500,
+    fade: true,
+    autoplay: true,
+    cssEase: 'linear',
+    autoplaySpeed: 4000,
+  });
+
+    //works slick
     $('.slider').slick({
       infinite: true,
       speed: 500,
@@ -10,4 +23,6 @@ $(function () {
       autoplay: true,
       autoplaySpeed: 3000,
     });
+
+    
 })

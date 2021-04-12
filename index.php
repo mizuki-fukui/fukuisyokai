@@ -147,10 +147,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
         </div>
         <div class="footer_box_item">
           <div class="footer_box_item_menubox">
-            <a href="#" class="footer_box_item_menubox_link">Services</a>
-            <a href="#" class="footer_box_item_menubox_link">Works</a>
+            <a href="services.html" class="footer_box_item_menubox_link">Services</a>
+            <a href="works.html" class="footer_box_item_menubox_link">Works</a>
             <a href="#" class="footer_box_item_menubox_link">About us</a>
-            <a href="#" class="footer_box_item_menubox_link">Contact</a>
+            <a href="confirm.php" class="footer_box_item_menubox_link">Contact</a>
             <a href="#" class="footer_box_item_menubox_link">Privacy Plicy</a>
           </div>
         </div>
