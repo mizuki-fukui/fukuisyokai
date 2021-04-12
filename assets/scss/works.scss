@@ -1,0 +1,32 @@
+@charset 'utf-8';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+$theme : #d5d0d0;
+$bro : #7c7a7a;
+$serif : 'Noto Serif JP', serif;
+
+@import 'Foundation/settings';
+@import 'Foundation/webfont';
+@import 'Object/header';
+@import 'Object/spmenu';
+@import 'Object/kv';
+@import 'Object/titlearea';
+@import 'Object/main';
+@import 'Object/type';
+@import 'Object/table';
+@import 'Object/footer';
+@import 'Object/copy';
+@import 'Object/title';
+@import 'Object/form';
+
+.kv {
+  height: auto;
+}
+
