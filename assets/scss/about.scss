@@ -19,7 +19,6 @@ $serif : 'Noto Serif JP', serif;
 @import 'Object/kv';
 @import 'Object/titlearea';
 @import 'Object/type';
-@import 'Object/table';
 @import 'Object/main';
 @import 'Object/footer';
 @import 'Object/copy';
@@ -28,4 +27,36 @@ $serif : 'Noto Serif JP', serif;
 
 .kv {
   height: auto;
+}
+.aboutKv {
+  margin: 0 auto;
+  width: calc((800 / 1366) * 100vw);
+  height: auto;
+  &_image {
+    width: 100%;
+    &_img {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+}
+.aboutBox {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: calc((100 / 1366) * 100vw);
+  padding-right: calc((100 / 1366) * 100vw);
+}
+table {
+  padding: 20px;
+  width: 90%;
+  margin: 0 auto;
+  background-color: $theme;
+  color: #fff;
+  border-radius: 30px;
+}
+.tbttl {
+  width: calc((300 / 1366) * 100vw);
+}
+td {
+  line-height: 3;
 }

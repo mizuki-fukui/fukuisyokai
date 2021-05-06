@@ -52,11 +52,12 @@
         margin: 0 auto;
         margin-bottom: 20px;
         &_title {
-          height: 80px;
+          padding-bottom: 10px;
+          height: auto;
         }
         &_title {
           &_ttl {
-            font-size: 18px;
+            font-size: 15px;
           }
         }
       }

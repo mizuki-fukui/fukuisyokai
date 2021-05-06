@@ -12,7 +12,7 @@
   &--theme {
     &::before {
       content: '';
-      width: 50px;
+      width: calc((50 / 1366) * 100vw);
       height: 3px;
       background-color: $theme;
       position: absolute;
@@ -36,7 +36,7 @@
   &--wt {
     &:before {
       content: '';
-      width: 50px;
+      width: calc((50 / 1366) * 100vw);
       height: 3px;
       background-color: #fff;
       position: absolute;
@@ -84,7 +84,7 @@
 @media screen and (max-width: 768px) {
   .title {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
   }
   .title2 {

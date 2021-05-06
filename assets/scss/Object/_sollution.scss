@@ -46,13 +46,14 @@
       margin-top: 20px;
       display: block;
       &_text {
-        width: 100%;
         margin-bottom: 40px;
+        margin-top: 40px;
+        width: 100%;
         &_txt {
           margin-bottom: 20px;
           font-size: 16px;
           text-align: center;
-          line-height: 1.7;
+          line-height: 2;
           &.-big {
             font-size: 26px;
           }

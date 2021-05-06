@@ -3,25 +3,6 @@
   text-align: center;
   display: inline-block;
   transition: .3s;
-  &--wt {
-    border: 4px solid #fff;
-    background-color: $theme;
-    border-radius: 20px;
-    &:hover {
-      border: 4px solid #fff;
-      background-color: #fff;
-      border-radius: 20px;
-    }
-  }
-  &--theme {
-    border: 4px solid $theme;
-    border-radius: 20px;
-    &:hover {
-      border: 4px solid $theme;
-      background-color: $theme;
-      border-radius: 20px;
-    }
-  }
   &_txt {
     padding-top: calc((20 / 1366) * 100vw);
     padding-bottom: calc((20 / 1366) * 100vw);
@@ -32,33 +13,41 @@
     font-family: $serif;
     font-weight: 600;
     position: relative;
-    &--wt {
-      color: #fff;
+    &--th {
+      display: inline-block;
+      border: 3px solid #d5d0d0;
+      border-radius: 10px;
+      color: #d5d0d0;
+      font-weight: 600;
+      transition: .3s;
       &:hover {
-        color: $theme;
+        background-color: #d5d0d0;
+        color: #fff;
+
       }
     }
-    &--theme {
-      color: $theme;
+    &--wt {
+      display: inline-block;
+      border: 3px solid #fff;
+      border-radius: 10px;
+      color: #fff;
+      font-weight: 600;
+      transition: .3s;
       &:hover {
-        color: #fff;
+        background-color: #fff;
+        color: #d5d0d0;
       }
     }
   }
 }
 @media screen and (max-width: 768px) {
   .button {
-    width: 200px;
-    height: 70px;
-    &--wt {
-      border: 2px solid #fff;
-    }
-    &--theme {
-      border: 2px solid $theme;
-    }
     &_txt {
       padding-top: 15px;
-      font-size: 18px;
+      padding-bottom: 15px;
+      padding-left: 25px;
+      padding-right: 25px;
+      font-size: 14px;
     }
   }
 } 

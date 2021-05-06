@@ -24,7 +24,7 @@
   .is-hidePC {
     display: block;
   }
-  .is-hideS {
+  .is-hideSP {
     display: none;
   }
 }
@@ -194,7 +194,7 @@
     opacity: 0;
     display: block;
     position: fixed;
-    top: 100vw;
+    top: 200vw;
     bottom: 0;
     left: 0;
     right: 0;
@@ -315,6 +315,10 @@
 .kv_telbox_box_text_time {
   color: #fff;
   font-size: calc((20 / 1366) * 100vw);
+}
+
+.kv_spBox {
+  border-bottom-left-radius: 30px;
 }
 
 @-webkit-keyframes slide {
@@ -451,6 +455,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .footer {
+    margin-right: 25px;
+  }
   .footer_box {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -524,7 +531,7 @@
 
 .title2--theme::before {
   content: '';
-  width: 50px;
+  width: calc((50 / 1366) * 100vw);
   height: 3px;
   background-color: #d5d0d0;
   position: absolute;
@@ -548,7 +555,7 @@
 
 .title2--wt:before {
   content: '';
-  width: 50px;
+  width: calc((50 / 1366) * 100vw);
   height: 3px;
   background-color: #fff;
   position: absolute;
@@ -602,7 +609,7 @@
 @media screen and (max-width: 768px) {
   .title {
     margin-bottom: 30px;
-    font-size: 60px;
+    font-size: 50px;
     text-align: center;
   }
   .title2 {

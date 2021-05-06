@@ -48,6 +48,10 @@
       &_item {
         margin: 0 auto 20px;
         width: 70%;
+        &_image {
+          border-radius: 20px;
+          overflow: hidden;
+        }
         &_ttl {
           height: 40px;
           left: 7px;

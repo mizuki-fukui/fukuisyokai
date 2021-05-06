@@ -104,3 +104,26 @@
     }
   }
 }
+@media screen and (max-width: 768px) {
+  .main {
+    &_box {
+      &_title {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        &_ttl {
+          font-size: 15px;
+        }
+      }
+      &_contents {
+        &_button {
+          width: 30px;
+          height: 30px;
+          top: -38px;
+        }
+        &_accordion {
+          padding: 10px;
+        }
+      }
+    }
+  }
+}

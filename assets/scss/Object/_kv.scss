@@ -56,6 +56,9 @@
       }
     }
   }
+  &_spBox {
+    border-bottom-left-radius: 30px;
+  }
 }
 @keyframes slide {
   0%   {left: -100vw;}

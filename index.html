@@ -42,9 +42,24 @@
   </header>
   <section class="kv">
     <div class="kv_image slick">
-      <img src="/assets/images/img/kv_img1.jpg" alt="キービジュアル" class="kv_image_img">
-      <img src="/assets/images/img/kv_img2.jpg" alt="キービジュアル" class="kv_image_img">
-      <img src="/assets/images/img/kv_img3.jpg" alt="キービジュアル" class="kv_image_img">
+      <div>
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/images/img/kv_sp.jpg">
+          <img src="/assets/images/img/kv_img1.jpg" alt="テキストテキスト" class="kv_image_img">
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/images/img/kv_sp.jpg">
+          <img src="/assets/images/img/kv_img2.jpg" alt="テキストテキスト" class="kv_image_img">
+        </picture>
+      </div>
+      <div>
+        <picture>
+          <source media="(max-width:767px)" srcset="/assets/images/img/kv_sp.jpg">
+          <img src="/assets/images/img/kv_img1.jpg" alt="テキストテキスト" class="kv_image_img">
+        </picture>
+      </div>
     </div>
     <div class="kv_telbox">
       <div class="kv_telbox_box">
@@ -105,6 +120,9 @@
         <span class="title -wt">S</span><span class="title -wtgr">o</span><span class="title -wt">l</span><span class="title -wtgr">u</span><span class="title -wt">t</span><span class="title -wtgr">i</span><span class="title -wt">o</span><span class="title -wtgr">n</span>
         <span class="sbttl -wt">- 解決 -<br></span>
       </div>
+      <div class="solution_box_image is-hidePC">
+        <img src="/assets/images/img/section2_img.jpg" alt="solution" class="solution_box_image_img">
+      </div>
       <div class="solution_box">
         <div class="solution_box_text">
           <p class="solution_box_text_txt">
@@ -123,7 +141,7 @@
             まずはお気軽にご相談ください。
           </p>
         </div>
-        <div class="solution_box_image">
+        <div class="solution_box_image is-hideSP">
           <img src="/assets/images/img/section2_img.jpg" alt="solution" class="solution_box_image_img">
         </div>
       </div>
@@ -168,9 +186,7 @@
           </picture>
         </div>
       </div>
-    <!-- </div>
-    <div class="services_box"> -->
-      <div class="services_box_item">
+      <div class="services_box_item is-hideSP">
         <div class="services_box_item_title">
           <p class="services_box_item_title_ttl">害虫駆除</p>
         </div>
@@ -181,7 +197,7 @@
           </picture>
         </div>
       </div>
-      <div class="services_box_item">
+      <div class="services_box_item is-hideSP">
         <div class="services_box_item_title">
           <p class="services_box_item_title_ttl">伐採・草刈り</p>
         </div>
@@ -192,7 +208,7 @@
           </picture>
         </div>
       </div>
-      <div class="services_box_item">
+      <div class="services_box_item is-hideSP">
         <div class="services_box_item_title">
           <p class="services_box_item_title_ttl">その他リフォーム</p>
         </div>
@@ -204,8 +220,8 @@
         </div>
       </div>
     </div>
-    <div class="button button--theme">
-      <a href="#" class="button_txt button_txt--theme">Read More</a>
+    <div class="button">
+      <a href="services.html" class="button_txt button_txt--th">Read More</a>
     </div>
   </section>
   <div class="container js-fade">
@@ -216,38 +232,79 @@
         </p>
       </div>
       <p class="sbttl2 -wt">- 施工事例 -<br></p>
-      <div class="works_contents">
-        <div class="works_contents_box">
-          <div class="works_contents_box_image">
-            <img src="/assets/images/img/works_item_img1.jpg" alt="" class="works_contents_box_image_img">
-          </div>
-          <div class="works_contents_box_label">
-            <p class="works_contents_box_label_num">01</p>
-            <p class="works_contents_box_label_ttl">アンテナ修理</p>
-          </div>
-        </div>
-        <div class="works_contents_box">
-          <div class="works_contents_box_image">
-            <img src="/assets/images/img/works_item_img2.jpg" alt="" class="works_contents_box_image_img">
-          </div>
-          <div class="works_contents_box_label">
-            <p class="works_contents_box_label_num">02</p>
-            <p class="works_contents_box_label_ttl">新しいものに交換</p>
+      <div class="works_contents slider is-hideSP">
+        <div class="works_contents_autobox">
+          <div class="works_contents_box">
+            <div class="works_contents_box_image">
+              <img src="/assets/images/img/works_item_img1.jpg" alt="" class="works_contents_box_image_img">
+            </div>
+            <div class="works_contents_box_label">
+              <p class="works_contents_box_label_num">01</p>
+              <p class="works_contents_box_label_ttl">アンテナ修理</p>
+            </div>
           </div>
         </div>
-        <div class="works_contents_box">
-          <div class="works_contents_box_image">
-            <img src="/assets/images/img/works_item_img3.jpg" alt="" class="works_contents_box_image_img">
+        <div class="works_contents_autobox">
+          <div class="works_contents_box">
+            <div class="works_contents_box_image">
+              <img src="/assets/images/img/works_item_img2.jpg" alt="" class="works_contents_box_image_img">
+            </div>
+            <div class="works_contents_box_label">
+              <p class="works_contents_box_label_num">02</p>
+              <p class="works_contents_box_label_ttl">新しいものに交換</p>
+            </div>
           </div>
-          <div class="works_contents_box_label">
-            <p class="works_contents_box_label_num">03</p>
-            <p class="works_contents_box_label_ttl">電気工事</p>
+        </div>
+        <div class="works_contents_autobox">
+          <div class="works_contents_box">
+            <div class="works_contents_box_image">
+              <img src="/assets/images/img/works_item_img3.jpg" alt="" class="works_contents_box_image_img">
+            </div>
+            <div class="works_contents_box_label">
+              <p class="works_contents_box_label_num">03</p>
+              <p class="works_contents_box_label_ttl">電気工事</p>
+            </div>
           </div>
         </div>
         
+        <div class="works_contents_autobox">
+          <div class="works_contents_box">
+            <div class="works_contents_box_image">
+              <img src="/assets/images/img/works_item_img3.jpg" alt="" class="works_contents_box_image_img">
+            </div>
+            <div class="works_contents_box_label">
+              <p class="works_contents_box_label_num">03</p>
+              <p class="works_contents_box_label_ttl">電気工事</p>
+            </div>
+          </div>
+        </div>
+        <div class="works_contents_autobox">
+          <div class="works_contents_box">
+            <div class="works_contents_box_image">
+              <img src="/assets/images/img/works_item_img3.jpg" alt="" class="works_contents_box_image_img">
+            </div>
+            <div class="works_contents_box_label">
+              <p class="works_contents_box_label_num">03</p>
+              <p class="works_contents_box_label_ttl">電気工事</p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="button button--wt">
-        <a href="#" class="button_txt button_txt--wt">Read More</a>
+      <div class="works_contentsSp is-hidePC">
+        <div class="works_contentsSp_autobox">
+          <div class="works_contentsSp_box">
+            <div class="works_contentsSp_box_image">
+              <img src="/assets/images/img/works_item_img1.jpg" alt="" class="works_contentsSp_box_image_img">
+            </div>
+            <div class="works_contentsSp_box_label">
+              <p class="works_contentsSp_box_label_num">01</p>
+              <p class="works_contentsSp_box_label_ttl">アンテナ修理</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="button">
+        <a href="works.html" class="button_txt button_txt--wt">Read More</a>
       </div>
     </section>
   </div>
@@ -278,12 +335,12 @@
             </tr>
             </table>
         </div>
-        <p class="about_box_item_message">お困りごと、お気軽にご相談お待ちしております。<br>お見積もり無料、即日対応いたします。</p>
+        <p class="about_box_item_message">お困りごと、お気軽に<br class="is-hidePC">ご相談お待ちしております。<br>お見積もり無料<br class="is-hidePC">即日対応いたします。</p>
       </div>
     </div>
     <div class="l-center">
-      <div class="button button--theme">
-        <a href="#" class="button_txt button_txt--theme">Read More</a>
+      <div class="button">
+        <a href="about.html" class="button_txt button_txt--th">Read More</a>
       </div>
     </div>
   </div>

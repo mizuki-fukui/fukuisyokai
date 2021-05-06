@@ -1,6 +1,6 @@
 .works {
-  padding-left: calc((100 / 1366) * 100vw);
-  padding-right: calc((100 / 1366) * 100vw);
+  padding-left: calc((200 / 1366) * 100vw);
+  padding-right: calc((200 / 1366) * 100vw);
   padding-top: calc((80 / 1366) * 100vw);
   padding-bottom: calc((50 / 1366) * 100vw);
   margin: 0 auto;
@@ -8,10 +8,9 @@
   text-align: center;
   &_contents {
     margin-top: 50px;
-    display: flex;
-    align-self: flex-start;
-    justify-content: space-between;
     &_box {
+      width: calc((280 / 1366) * 100vw);
+      margin: 0 10px;
       display: flex;
       justify-content: flex-start;
       align-items: stretch;
@@ -25,7 +24,9 @@
         }
       }
       &_label {
-        padding-top: 20px;
+        border-top-right-radius: 30px;
+        border-bottom-right-radius: 30px;
+        padding-top: 30px;
         background-color: #eee;
         &_num {
           padding-left: 5px;
@@ -54,6 +55,35 @@
     }
   }
 }
+.prev-slider,
+.next-slider {
+  position: absolute;
+  color: #fff;
+}
+.prev-slider {
+  left: -10%;
+  top: 50%;
+  transform: rotate(-90deg);
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+}
+.next-slider {
+  right: -10%;
+  top: 50%;
+  transform: rotate(90deg);
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+  }
+}
 @media screen and (max-width: 768px) {
   .works {
     padding-left: 25px;
@@ -62,6 +92,48 @@
     &_slider {
       margin-top: 50px;
     }
+    &_contentsSp {
+      &_box {
+        margin-top: 20px;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        align-items: stretch;
+        overflow: hidden;
+        &_image {
+          &_img {
+            vertical-align: top;
+          }
+        }
+        &_label {
+          border-top-right-radius: 20px;
+          border-bottom-right-radius: 20px;
+          padding-top: 30px;
+          background-color: #eee;
+          &_num {
+            padding-left: 5px;
+            padding-right: 5px;
+            margin: 0 auto;
+            font-size: 14px;
+            background-color: #fff;
+            color: $theme;
+          }
+          &_ttl {
+            padding-left: 5px;
+            padding-right: 5px;
+            padding-top: 20px;
+            margin: 0 auto;
+            font-size: 14px;
+            color: #888;
+            writing-mode: vertical-lr;
+            font-family: $serif;
+          }
+        }
+      }
+    }
+  }
+  .works_contents_autobox {
+    width: 80%;
   }
 }
 @media screen and (min-width: 1301px) {
